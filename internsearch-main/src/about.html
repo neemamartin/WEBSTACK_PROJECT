@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+
+        <!-- makes site responsive -->
+        <link rel="stylesheet" href="style/style.css" />
+
+        <!-- for icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+
+        <title>About | InternSearch</title>
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        />
+
+        <style>
+            /* Carousel base class */
+            .carousel {
+                margin-bottom: 4rem;
+            }
+            /* Since positioning the image, we need to help out the caption */
+            .carousel-caption {
+                bottom: 3rem;
+                z-index: 10;
+            }
+
+            /* Declare heights because of positioning of img element */
+            .carousel-item {
+                height: 32rem;
+                background: rgb(0, 0, 0);
+                position: relative;
+                color: #fff;
+            }
+            .carousel-item > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                height: 32rem;
+            }
+
+            
+            .overlay-image {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5;
+            }
+
+
+            /* MARKETING CONTENT
+-------------------------------------------------- */
+
+            /* Center align the text within the three columns below the carousel */
+            .marketing .col-lg-4 {
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+            .marketing h2 {
+                font-weight: 400;
+            }
+            /* rtl:begin:ignore */
+            .marketing .col-lg-4 p {
+                margin-right: 0.75rem;
+                margin-left: 0.75rem;
+            }
+            /* rtl:end:ignore */
+
+            /* Featurettes
+------------------------- */
+
+            .featurette-divider {
+                margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+            }
+
+            /* Thin out the marketing headings */
+            .featurette-heading {
+                font-weight: 300;
+                line-height: 1;
+                /* rtl:remove */
+                letter-spacing: -0.05rem;
+            }
+
+            /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+            @media (min-width: 40em) {
+                /* Bump up size of carousel content */
+                .carousel-caption p {
+                    margin-bottom: 1.25rem;
+                    font-size: 1.25rem;
+                    line-height: 1.4;
+                }
+
+                .featurette-heading {
+                    font-size: 50px;
+                }
+            }
+
+            @media (min-width: 62em) {
+                .featurette-heading {
+                    margin-top: 7rem;
+                }
+            }
+        </style>
+
+        <title>Employer Registration</title>
+    </head>
+    <body>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- nav bar -->
+        <header class="p-3 bg-dark text-white">
+            <div class="container">
+                <div
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+                >
+                    <a
+                        href="../index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                    >
+                        <img
+                            src="../assets/logo.svg"
+                            width="40"
+                            height="32"
+                            alt=""
+                            srcset=""
+                        />
+                    </a>
+
+                    <ul
+                        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                    >
+                        <li>
+                            <a
+                                href="../index.html"
+                                class="nav-link px-2 text-white"
+                                >Home</a
+                            >
+                        </li>
+
+                        <li>
+                            <a
+                                href="../src/faq.html"
+                                class="nav-link px-2 text-white"
+                                >FAQs</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../src/about.html"
+                                class="nav-link px-2 text-secondary"
+                                >About</a
+                            >
+                        </li>
+                    </ul>
+
+                    <!-- login button -->
+                    <div class="text-end">
+                        <button
+                            class="btn dropdown-toggle me-3 btn-outline-info px-4 fw-bold"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Login
+                        </button>
+                        <ul
+                            class="dropdown-menu dropdown-menu-dark"
+                            aria-labelledby="dropdownMenuButton1"
+                        >
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="../src/student-login.php"
+                                    >Student Login</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="../src/login-company.php"
+                                    >Company Login</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Register button -->
+                    <div class="text-end">
+                        <button
+                            class="btn dropdown-toggle btn-outline-light me-2"
+                            type="button"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Register
+                        </button>
+                        <ul
+                            class="dropdown-menu dropdown-menu-light"
+                            aria-labelledby="dropdownMenuButton2"
+                        >
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="../src/student-registration.php"
+                                    >Intern Registration</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="../src/register-company.php"
+                                    >Company Registration</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- nav bar -->
+
+
+        <!-- carousal -->
+        <div id="myCarousel" class="carousel slide carousal-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+        
+                <div class="container">
+                <div class="overlay-image" style="background-image:url(../assets/about-img1.jpg) "></div>
+                  <div class="carousel-caption text-start">
+                    <h1>About Us.</h1>
+                    <p>We work as a team, and have been creating this platform for the past 4 months.</p>
+                    <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+        
+                <div class="container">
+                    <div class="overlay-image" style="background-image:url(../assets/about-img2.jpg) "></div>
+                  <div class="carousel-caption">
+                    <h1>Where do we study/work?</h1>
+                    <p>The three of us are second year students studying in Bangalore!</p>
+                    <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+        
+                <div class="container">
+                    <div class="overlay-image" style="background-image:url(../assets/about-img3.jpg) "></div>
+                  <div class="carousel-caption text-end">
+                    <h1>Why did we come up with our domain of Internships?</h1>
+                    <p>In our 6th semester, we will be looking actively for internships, so we thought of creating a platform around this!</p>
+                    <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        
+          <!-- Marketing messaging and featurettes
+          ================================================== -->
+          <!-- Wrap the rest of the page in another container to center all the content. -->
+        
+          <div class="container marketing">
+        
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        
+                <h2>Neema Martin</h2>
+                <p>Built a couple of tables for the database along with creating the backend logic for our platform.</p>
+                <p><a class="btn btn-primary" href="https://github.com/neema33">Check my Github &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        
+                <h2>Kousika R</h2>
+                <p>Worked in the database logic and created the database.</p>
+                <p><a class="btn btn-primary" href="https://github.com/kousika-2002">Check my Github &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        
+                <h2>Ayushman</h2>
+                <p>created the UI of the platform and linked frontend with the backend.</p>
+                <p><a class="btn btn-primary" href="https://twitter.com/web3Gurung">Check my twitter &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                  <h1 class="display-5 fw-bold">Come meet us!</h1>
+                  <p class="col-md-8 fs-5">We work remote and meet on Sundays in the Wipro Park! (check the map).</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.1028431174469!2d77.63320334346596!3d12.929157970344471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14430a7908c9%3A0x776c5b9e757140fa!2sWipro%20Park!5e0!3m2!1sen!2sin!4v1651723484678!5m2!1sen!2sin" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <br>
+                  <a href="https://maps.google.com/maps/dir//Wipro+Park+WJHM%2BQ9R+80+Feet+Rd,+1st+Block+Koramangala,+Koramangala+Bengaluru,+Karnataka+560047/@12.9294917,77.6333823,19z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3bae14430a7908c9:0x776c5b9e757140fa"><button class="btn btn-primary btn-lg" type="button">Show me how to reach here!</button></a>
+                </div>
+              </div>
+
+    </body>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <p style="text-align: center;">InternSearch by Neema, Kousika and Ayushman. Know more at <a href="../src/about.html">About Us Page</a>.</p>
+            <p style="text-align: center;">
+                <a href="#">Back to top</a>
+            </p>
+        </div>
+    </footer>
+</html>
